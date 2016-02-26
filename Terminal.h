@@ -9,8 +9,8 @@ class Terminal{
 float Terminal::getValue(char* content,float minValue,float maxValue){
   float temp;
   do{
-    std::cout<<content;
-    std::cin>>temp;
+    cout<<content;
+    cin>>temp;
   }while(temp<minValue || temp>maxValue);
   return temp;
 }
