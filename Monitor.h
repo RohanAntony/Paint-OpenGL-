@@ -11,6 +11,13 @@ void Monitor::display(void){
 
 void Monitor::keyPressed(unsigned char key,int x,int y){
   cout<<"Calling keyPressed function."<<endl;
+  /*
+    L - set shape to line Loop
+    S - set shape to line Strips
+    P - set shape to polygons
+    Z - perform undo or remove Vertex
+    Q - perform save and quit operation
+  */
 }
 
 void Monitor::mouseClick(int button,int state,int x,int y){

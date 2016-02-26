@@ -1,12 +1,12 @@
 class Terminal{
   private:
-    float getValue(char*,float,float);
+    float getValue(string,float,float);
   public:
     void getNewColor();
 }terminal;
 
 //private functions
-float Terminal::getValue(char* content,float minValue,float maxValue){
+float Terminal::getValue(string content,float minValue,float maxValue){
   float temp;
   do{
     cout<<content;
