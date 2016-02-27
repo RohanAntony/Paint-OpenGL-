@@ -1,4 +1,4 @@
-#define MAXIMUM_VERTICES_PER_SHAPE 2
+#define MAXIMUM_VERTICES_PER_SHAPE 20
 
 struct Vertex{
   float x,y;

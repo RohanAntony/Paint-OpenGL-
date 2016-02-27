@@ -3,9 +3,10 @@
 
 using namespace std;
 
+#include "Shape.h"
+#include "Color.h"
 #include "Terminal.h"
 #include "Monitor.h"
-#include "Shape.h"
 #include "AllObjects.h"
 
 
@@ -14,10 +15,9 @@ int main(int argc,char** argv){
   monitor.display();
   monitor.keyPressed('c',10,20);
   monitor.mouseClick(1,1,10,20);
-  currentShape.setShapeType(GL_POLYGON);
-  currentShape.addVertex(0.95,0.88);
-  currentShape.addVertex(0.10,0.80);
-  currentShape.addVertex(0.45,0.50);
-  currentShape.removeVertex(10);
+  allObjects.addNewColor(currentColor);
+  allObjects.addNewShape(currentShape);
+  cout<<allObjects.getNextObjectType(0)<<endl;
+  cout<<allObjects.getNextObjectType(1)<<endl;
   return 0;
 }

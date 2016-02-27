@@ -22,4 +22,5 @@ void Terminal::getNewColor(){
   r = getValue("Enter red value:",0.0,1.0);
   g = getValue("Enter green value:",0.0,1.0);
   b = getValue("Enter blue value:",0.0,1.0);
+  currentColor.setColor(r,g,b);
 }
